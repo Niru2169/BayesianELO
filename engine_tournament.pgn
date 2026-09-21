@@ -1,0 +1,3000 @@
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "1"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. d3 e6 2. Be3 Bd6 3. a3 Qf6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "2"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. Nc3 b5 2. b3 Nf6 3. Nd5 Ba6 4. Ne3 Ne4 5. h4 b4 6. Nf5 h6 7. Ne3 c6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "3"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. g4 e6 2. h4 d6 3. h5 c5 4. Rh4 d5 5. Bh3 c4 6. d3 Qa5+ 7. Qd2 Nc6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "4"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. Na3 Nc6 2. b3 Nb8 3. e3 a6 4. b4 d6 5. h4 Nf6 6. g3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "5"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. h4 Nc6 2. d4 g6 3. c4 d5 4. h5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "6"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. b4 f6 2. Ba3 Kf7 3. h3 e6 4. Rh2 Qe7 5. Nf3 d6 6. Qc1 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "7"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. g3 a6 2. c3 f6 3. a4 c6 4. b4 Qc7 5. h4 g5 6. Bg2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "8"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. g3 f5 2. b3 d6 3. c4 b5 4. a3 Be6 5. g4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "9"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. e3 Nf6 2. f4 e6 3. Qf3 Nc6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "10"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. b3 f6 2. a4 d5 3. f3 d4 4. d3 Qd6 5. Ba3 Bh3 6. Kd2 g5 7. e3 Qd5 8. g3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "11"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. h4 a6 2. g3 h6 3. f4 d5 4. Nh3 c5 5. Nf2 b5 6. Nd3 Qc7 7. c4 Nd7 8. a4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "12"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. Nc3 h5 2. d3 b5 3. Rb1 g5 4. Bxg5 f5 5. Bxe7 d5 6. Bb4 Qg5 7. g4 a5 8. Nh3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "13"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. g3 f5 2. Nh3 d6 3. d4 Bd7 4. d5 Qc8 5. a4 e5 6. Bh6 e4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "14"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. h3 a6 2. g3 c5 3. c4 Nh6 4. a4 f6 5. b3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "15"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. c3 e6 2. Nf3 Ba3 3. g4 Qe7 4. Nh4 b5 5. Nf3 Qf8 6. Ng1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "16"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. g3 d6 2. e4 d5 3. f4 Be6 4. Qh5 c5 5. Bc4 Bc8 6. a4 e6 7. Nf3 Qa5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "17"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. Na3 e6 2. g3 Nf6 3. f3 Rg8 4. c4 c6 5. Qa4 d6 6. Qc2 Rh8 7. Qxh7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "18"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. e3 Nc6 2. b4 Nf6 3. f4 Nd4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "19"]
+[White "EngineA"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. d3 e5 2. Bf4 g6 3. Be3 g5 4. a4 c6 5. a5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "20"]
+[White "EngineB"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. g4 f6 2. Bg2 Na6 3. f4 h5 4. Nc3 b6 5. Nh3 f5 6. Nd5 c5 7. Nc3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "21"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. Na3 e6 2. h3 Bb4 3. e4 Qh4 4. Qg4 Qf6 5. Ne2 h6 6. Qf4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "22"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. f4 c5 2. Nc3 Nf6 3. b4 a6 4. Nd5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "23"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. g3 g5 2. f4 h5 3. Na3 c6 4. Nc4 Bh6 5. fxg5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "24"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. d3 f5 2. Nc3 h5 3. h4 c5 4. b3 f4 5. Nb1 Qb6 6. Bd2 Nc6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "25"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. c4 Nf6 2. f3 Nc6 3. Kf2 h5 4. d3 d6 5. a4 Rb8 6. Ke3 a5 7. d4 Rh6 8. Qd3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "26"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. e3 h5 2. Ba6 c5 3. Nc3 f5 4. Bc4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "27"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. b4 b5 2. e4 d6 3. Qh5 Be6 4. Bc4 Na6 5. Bxe6 c6 6. Bb3 e5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "28"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. b3 Nc6 2. Nh3 a6 3. c4 g5 4. Rg1 Bg7 5. e4 Bh6 6. c5 Ne5 7. Bb5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "29"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. e3 a6 2. Qh5 g6 3. e4 d5 4. Bd3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "30"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d4 Nh6 2. h4 c5 3. Bf4 b5 4. Bg3 Bb7 5. Nh3 Qb6 6. c4 Ba6 7. Rh2 Qb7 8. Kd2 d6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "31"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. f3 d6 2. c4 e6 3. f4 a5 4. Nf3 Nf6 5. h4 Nfd7 6. a4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "32"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. b3 h6 2. a4 c6 3. Na3 g5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "33"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. c4 Nh6 2. Qb3 Na6 3. Qd3 d5 4. Qf5 Nc5 5. a4 dxc4 6. Qe5 c6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "34"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. a3 Nf6 2. b3 Ng4 3. h3 d5 4. Nc3 Nf6 5. d3 b5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "35"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. h3 e6 2. g3 f5 3. h4 b5 4. c3 Ne7 5. Bg2 h6 6. f4 c6 7. b4 Ba6 8. Nh3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "36"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. h4 Nf6 2. f4 Ne4 3. h5 e6 4. d3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "37"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. e3 Nh6 2. b3 g6 3. Qe2 c6 4. Nh3 Qc7 5. g4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "38"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d4 h5 2. h4 c5 3. Be3 Rh7 4. Bd2 Rh6 5. Be3 e6 6. Nf3 Nf6 7. Nfd2 d6 8. dxc5 Na6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "39"]
+[White "EngineA"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. g4 a5 2. e4 Na6 3. Qe2 e5 4. Qd1 Ke7 5. Nf3 d5 6. Ke2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "40"]
+[White "EngineC"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. f3 a6 2. g4 Nc6 3. d3 f5 4. Bd2 e5 5. b4 Kf7 6. e4 Nb8 7. Na3 fxg4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "41"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. h4 c6 2. d4 Qa5+ 3. Bd2 b6 4. c4 d6 5. g4 Na6 6. f3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "42"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. c4 Nh6 2. g3 d6 3. Qc2 Ng4 4. e4 e6 5. f3 g6 6. Na3 d5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "43"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. d4 e5 2. e4 b5 3. Qg4 d6 4. Qh5 Qg5 5. c3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "44"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. b3 Nc6 2. h3 a5 3. f3 Ne5 4. h4 Ra6 5. Rh3 Nf6 6. Na3 Nc4 7. d4 Ng4 8. Rb1 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "45"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. b4 f6 2. c3 d5 3. f3 Bf5 4. Qc2 e6 5. g4 Ne7 6. h4 c5 7. e3 Qd6 8. g5 Qc6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "46"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. f4 Nf6 2. c4 Ne4 3. Qb3 e6 4. Qa4 g5 5. e3 gxf4 6. b4 e5 7. Nc3 b5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "47"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. f4 g6 2. e4 h5 3. Kf2 Na6 4. Qe1 h4 5. Na3 d5 6. Nf3 Qd7 7. b3 Nf6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "48"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d3 b6 2. Na3 e5 3. Nb1 Bd6 4. Bh6 Qg5 5. f3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "49"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. Nc3 g5 2. b3 c6 3. h4 a6 4. h5 Nf6 5. Rh3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "50"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. b4 Nh6 2. d4 a6 3. d5 Rg8 4. Bd2 c6 5. c4 b6 6. a4 a5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "51"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. a4 e6 2. g4 Ba3 3. bxa3 f6 4. f4 Ne7 5. e3 Nd5 6. h3 f5 7. Qe2 Na6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "52"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. a4 c5 2. Nh3 b6 3. d4 f5 4. f3 Nh6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "53"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. h3 f5 2. g3 Nf6 3. e3 d6 4. Qh5+ Kd7 5. d3 Ng4 6. hxg4 a6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "54"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d3 Nc6 2. f3 Nh6 3. c4 f5 4. Kf2 g6 5. Qc2 b5 6. Ke1 b4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "55"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. e3 f6 2. d4 Nh6 3. Kd2 Ng4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "56"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. Na3 b5 2. h3 h5 3. f3 d6 4. Rb1 c6 5. Kf2 h4 6. Qe1 Qa5 7. Rh2 Rh6 8. d3 f5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "57"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. h4 f6 2. Nh3 a5 3. b4 h6 4. Rh2 d6 5. c4 h5 6. Rh1 e5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "58"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. a3 c5 2. g4 a5 3. d3 Qc7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "59"]
+[White "EngineA"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. Nh3 g5 2. e4 Bh6 3. Qe2 a6 4. c3 e5 5. f4 Qe7 6. Rg1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "60"]
+[White "EngineD"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d3 a5 2. b4 f5 3. g4 f4 4. bxa5 b6 5. a4 h5 6. Ba3 Ra6 7. Nf3 Nh6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "61"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. e3 f5 2. f3 a5 3. g4 c6 4. Ke2 Nh6 5. c3 fxg4 6. Bg2 c5 7. Nh3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "62"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. b3 d6 2. c4 f5 3. b4 f4 4. Nh3 c6 5. Qc2 Kf7 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "63"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. e4 c5 2. g4 h6 3. a3 g5 4. c3 f5 5. Qe2 Rh7 6. Qc4 Rf7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "64"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. c3 b5 2. d3 g5 3. f3 h5 4. Na3 c6 5. h4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "65"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. f4 d6 2. d3 Bh3 3. Nc3 Qc8 4. a4 Bd7 5. Be3 Qd8 6. Nb1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "66"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d3 b5 2. c4 g5 3. f3 h6 4. Qa4 Na6 5. Nd2 Nb4 6. Nb1 Rb8 7. Nd2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "67"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. h3 d6 2. Nf3 Nf6 3. g4 Na6 4. a4 Be6 5. e4 c5 6. Nd4 Rg8 7. Nc3 d5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "68"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. g3 Nf6 2. f3 h5 3. Kf2 Rh6 4. e3 a6 5. Ke1 e5 6. b3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "69"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. h3 b5 2. c3 Bb7 3. c4 Nc6 4. f4 e5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "70"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. a4 e6 2. f4 Qh4+ 3. g3 b6 4. gxh4 a5 5. c4 Na6 6. Ra3 f6 7. c5 Nh6 8. h5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "71"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. f3 f6 2. d3 Nc6 3. Bg5 Nb4 4. Bd2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "72"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. Nh3 g5 2. f4 c5 3. g4 gxf4 4. Nxf4 Nc6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "73"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. f4 Nc6 2. g3 h6 3. a4 d5 4. b4 e5 5. Bb2 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "74"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. h3 d6 2. h4 Kd7 3. Rh2 Ke8 4. e3 d5 5. b3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "75"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. f4 Na6 2. g4 e6 3. c3 Ke7 4. a3 h5 5. e3 f6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "76"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. g4 b6 2. b4 f6 3. Nh3 Bb7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "77"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. b4 b5 2. Nh3 f6 3. c4 Kf7 4. Qb3 a6 5. Bb2 c5 6. a3 Ke8 7. Qd1 e5 8. Ra2 e4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "78"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. e4 a6 2. Nc3 b6 3. h3 Nc6 4. f4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "79"]
+[White "EngineA"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. e4 c6 2. b3 a6 3. g4 e5 4. Nf3 Qa5 5. Nh4 Qa3 6. Bh3 h6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "80"]
+[White "EngineE"]
+[Black "EngineA"]
+[Result "1-0"]
+
+1. d4 Nh6 2. h4 c5 3. Nd2 d6 4. Nc4 Bd7 5. a4 Bb5 6. b3 f6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "81"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. f3 d6 2. b4 Bd7 3. g3 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "82"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. Na3 Nh6 2. b4 f6 3. Bb2 e6 4. f3 Rg8 5. g3 g6 6. Nb1 Kf7 7. Bc3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "83"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. h3 e5 2. c3 g6 3. g3 Qg5 4. f4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "84"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. f4 c5 2. Na3 b6 3. Rb1 d5 4. d4 c4 5. Kf2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "85"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. g4 b6 2. e4 f6 3. c4 Nh6 4. Qf3 Nxg4 5. d4 Nc6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "86"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. a3 b6 2. c4 e5 3. e3 Ba6 4. Qb3 g5 5. Qc2 c6 6. Qb3 Bxc4 7. Ne2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "87"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nf3 b6 2. h4 a6 3. e3 Ra7 4. Nc3 Nf6 5. Na4 a5 6. Rb1 Nd5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "88"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. Na3 d5 2. g4 Nh6 3. Nf3 Nxg4 4. c4 Na6 5. Nh4 Nxh2 6. Rg1 Nb8 7. Rb1 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "89"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. Nc3 b6 2. a4 e5 3. g3 a5 4. Ra2 g6 5. b3 Nf6 6. h4 Be7 7. Rh3 h6 8. d4 d5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "90"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. Nc3 g5 2. Na4 a5 3. Nh3 g4 4. Ng1 f6 5. Nb6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "91"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. c3 a6 2. d3 g5 3. Qb3 f6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "92"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. g3 g6 2. Na3 Bg7 3. c4 h6 4. f4 d5 5. Kf2 c5 6. g4 Bd7 7. Ke1 d4 8. b4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "93"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nh3 f5 2. d3 c5 3. Qd2 Kf7 4. Na3 Ke6 5. g3 Kf6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "94"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. d3 f5 2. Nc3 g6 3. Be3 h5 4. Bd4 Nc6 5. e3 h4 6. Qe2 g5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "95"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nh3 h5 2. e3 Rh7 3. f3 Nf6 4. c3 g5 5. b4 Ng4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "96"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. a4 a6 2. h3 f6 3. b4 c6 4. Nc3 Qb6 5. f4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "97"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. f4 Nf6 2. b4 d6 3. Bb2 Qd7 4. Qc1 Qa4 5. d4 Qxa2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "98"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "0-1"]
+
+1. c4 a6 2. g4 d5 3. Na3 b5 4. Bh3 Bf5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "99"]
+[White "EngineA"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. c3 b6 2. Qb3 h5 3. Qxb6 Bb7 4. Qb4 g5 5. d3 a5 6. g4 Bc8 7. Qc5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "100"]
+[White "EngineF"]
+[Black "EngineA"]
+[Result "1/2-1/2"]
+
+1. d3 c5 2. Qd2 c4 3. Nc3 a5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "101"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. b4 h5 2. a4 b6 3. Bb2 a5 4. Nh3 c6 5. Ng5 e5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "102"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. b3 a5 2. h3 b5 3. Ba3 d5 4. e3 c5 5. f3 Be6 6. d3 Bc8 7. Bc1 Qc7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "103"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. c3 e5 2. Qb3 Be7 3. Qb4 b6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "104"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. a3 c5 2. g4 e5 3. Nc3 a5 4. a4 b6 5. Na2 f5 6. h4 h6 7. e3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "105"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. Nf3 a6 2. Nc3 f5 3. e3 e6 4. g4 Qf6 5. Nb5 axb5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "106"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. a3 Nf6 2. h4 h6 3. h5 Na6 4. g4 Rb8 5. Bg2 b5 6. d3 g5 7. Bb7 Rh7 8. Nd2 Nxh5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "107"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. f3 Nc6 2. b4 Nd4 3. a4 Nb5 4. Ra2 e6 5. Kf2 h5 6. c3 Rh7 7. Qb3 Qf6 8. Qc2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "108"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. Na3 Nh6 2. Nf3 Rg8 3. g3 e6 4. h4 Qxh4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "109"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. Nf3 h6 2. b3 c5 3. Nd4 Qc7 4. d3 cxd4 5. c4 Qa5+ 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "110"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. f4 d5 2. g3 a6 3. Nf3 f5 4. c4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "111"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. Nh3 Nf6 2. e4 c6 3. Qe2 b5 4. Qh5 d6 5. g3 Qd7 6. Qf5 Ng8 7. b4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "112"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. d3 a5 2. h4 d5 3. f3 a4 4. Bd2 Na6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "113"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. c3 f5 2. f4 g5 3. Qa4 Bh6 4. Qd1 g4 5. h4 Bg5 6. g3 h6 7. c4 b6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "114"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. b3 g5 2. e3 e6 3. Qf3 Be7 4. g3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "115"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. Nc3 g5 2. Na4 b6 3. Nf3 f5 4. Nc5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "116"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. c4 b6 2. a4 Ba6 3. e3 e6 4. d4 f6 5. f3 h5 6. Ne2 Kf7 7. a5 Qe8 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "117"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. d4 f6 2. Qd2 d5 3. Qc3 Qd7 4. Bd2 c6 5. f3 Na6 6. h4 Qf5 7. Kd1 Qh5 8. a3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "118"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. a4 a5 2. d4 Nh6 3. e3 g6 4. Nf3 Ra6 5. Nc3 c5 6. Qd3 Rf6 7. Be2 Rg8 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "119"]
+[White "EngineB"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. b4 h5 2. Ba3 Nc6 3. Bb2 Nh6 4. e4 a6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "120"]
+[White "EngineC"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. f4 b6 2. f5 c6 3. d3 d6 4. c4 c5 5. g3 Kd7 6. a4 Nf6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "121"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. Nf3 Nc6 2. h3 a6 3. b4 e6 4. e3 h5 5. Ke2 Nce7 6. Ne1 a5 7. Rg1 axb4 8. d3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "122"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. b4 e5 2. f4 a6 3. b5 Nh6 4. bxa6 Nxa6 5. c4 Be7 6. Nh3 Ng8 7. Bb2 Bf6 8. e4 Qe7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "123"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. b3 Na6 2. Nh3 f5 3. c3 Nc5 4. Qc2 e6 5. e3 a6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "124"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. a3 Nc6 2. h4 Nf6 3. b3 Rg8 4. c3 Nh5 5. g3 f5 6. f3 g5 7. c4 g4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "125"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. Na3 h5 2. Nb5 c6 3. Na3 d5 4. g4 f5 5. b4 Bd7 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "126"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. e3 g5 2. f3 a6 3. d3 Bg7 4. f4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "127"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. e3 b6 2. g4 Na6 3. Ne2 f5 4. f4 Bb7 5. b3 Nb4 6. Bg2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "128"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. a3 h6 2. f3 Na6 3. f4 e6 4. a4 Bc5 5. b4 Rb8 6. d4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "129"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. e4 f5 2. h4 c5 3. d4 d5 4. g4 e6 5. a4 Na6 6. c4 Nc7 7. Ke2 f4 8. Rh3 Rb8 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "130"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. d3 b5 2. Nf3 c6 3. Nbd2 Qc7 4. Rg1 Qxh2 5. c3 Kd8 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "131"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. Nc3 Nc6 2. d4 d5 3. h3 Ne5 4. Bd2 h6 5. h4 g5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "132"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. f4 b5 2. h3 d6 3. d4 f6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "133"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. f4 Na6 2. c3 Rb8 3. g4 h6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "134"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. f4 d5 2. d4 a6 3. Qd2 Nc6 4. Na3 Bh3 5. Kd1 b6 6. Nf3 Qc8 7. c4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "135"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. Nc3 b6 2. Na4 e5 3. b3 Qe7 4. Rb1 e4 5. d4 Qe6 6. Bg5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "136"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. h3 a6 2. c3 h5 3. Qc2 b5 4. e4 Nh6 5. Bd3 f5 6. Kd1 d5 7. Ke1 e5 8. Qa4 d4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "137"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. g4 d5 2. c3 Nh6 3. f3 Nc6 4. Qb3 Bf5 5. Nh3 e5 6. Qxd5 Qxd5 7. Rg1 Rd8 8. Nf2 Nd4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "138"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. d4 c5 2. c4 g5 3. Nf3 b5 4. d5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "139"]
+[White "EngineB"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. h3 a5 2. g4 Ra7 3. g5 Ra6 4. g6 d5 5. f4 Kd7 6. b3 Rf6 7. Na3 Rf5 8. gxh7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "140"]
+[White "EngineD"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. e3 c5 2. Be2 f6 3. c4 g5 4. Nf3 d6 5. a3 e6 6. Ra2 Nd7 7. d4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "141"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. d4 d5 2. h3 Bd7 3. Bg5 a5 4. f3 Na6 5. b4 Be6 6. Bh6 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "142"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. c4 Na6 2. g4 Nb8 3. g5 Nc6 4. Qb3 h6 5. a3 f5 6. Qd3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "143"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. e3 f5 2. b4 a6 3. c4 Nh6 4. Ba3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "144"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. a3 e6 2. h4 Nf6 3. d3 Qe7 4. Rh3 Nh5 5. Rh2 c5 6. f4 g5 7. Nd2 b5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "145"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. c3 e5 2. Qc2 g5 3. f4 gxf4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "146"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. Nc3 Nh6 2. h3 g6 3. Nb1 c5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "147"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. d4 g5 2. Qd3 d6 3. Qd1 Bg4 4. Qd3 Nf6 5. Qd1 a6 6. h4 h5 7. Nh3 Qd7 8. b4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "148"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. c4 Nh6 2. b4 d5 3. h4 Bg4 4. d4 Qd6 5. Qc2 Bh3 6. Qxh7 e5 7. Nc3 Qg6 8. f4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "149"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. Nc3 d5 2. e3 Kd7 3. a4 d4 4. Nb5 e6 5. g4 Nf6 6. h3 Ke7 7. Ne2 a6 8. Nxc7 Kd6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "150"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. e3 Na6 2. g4 c5 3. h4 g6 4. Ne2 Nf6 5. Na3 d6 6. Rg1 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "151"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. f4 e5 2. a4 Bc5 3. Ra3 Ke7 4. g4 g5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "152"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. Nf3 f6 2. Ne5 a6 3. Nc3 b5 4. Nb1 d5 5. Rg1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "153"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. f3 c6 2. a3 Nf6 3. c3 Ng4 4. Qc2 a5 5. fxg4 a4 6. Ra2 c5 7. Kd1 g6 8. Qb3 d6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "154"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. d4 d6 2. c4 Kd7 3. a3 b6 4. Kd2 e6 5. e3 f5 6. Qg4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "155"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. Na3 Nc6 2. d3 a5 3. Bf4 Nb4 4. Kd2 h5 5. b3 Ra7 6. h3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "156"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. Nf3 a6 2. c4 g5 3. Qc2 Nf6 4. Nh4 c5 5. d3 Ne4 6. Bf4 h6 7. Bd2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "157"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. a4 f5 2. Nf3 Na6 3. Nh4 h6 4. c4 b6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "158"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. Nf3 a5 2. Ng1 h5 3. a3 d6 4. f4 g5 5. Kf2 gxf4 6. Qe1 Ra7 7. c3 Bh3 8. d3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "159"]
+[White "EngineB"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. Na3 Nh6 2. Rb1 e5 3. d4 Na6 4. f3 Bc5 5. Bg5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "160"]
+[White "EngineE"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. f3 a5 2. c3 g5 3. f4 Bh6 4. Qb3 Nc6 5. Kf2 Bf8 6. g4 Bg7 7. Bg2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "161"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. c4 c5 2. f3 f6 3. Nc3 Nc6 4. f4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "162"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. f3 h6 2. e3 d5 3. Nh3 Nc6 4. g3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "163"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. c4 h6 2. d4 Nc6 3. Kd2 f6 4. Na3 g5 5. c5 h5 6. f4 e6 7. b4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "164"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. b3 Nc6 2. h4 a6 3. a4 a5 4. b4 Ra6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "165"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. b4 g6 2. Nc3 g5 3. a3 Nf6 4. Na4 g4 5. Nh3 gxh3 6. Bb2 Ng8 7. Rg1 h6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "166"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. c3 Nc6 2. g3 Nd4 3. b4 b6 4. Bb2 Rb8 5. h4 Nb5 6. a3 h5 7. Rh2 c6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "167"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. b4 h6 2. Na3 a6 3. d4 Nf6 4. c4 Rg8 5. Nb1 Nc6 6. a4 g5 7. f3 d6 8. Bf4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "168"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. g4 a5 2. a4 Nh6 3. h4 d5 4. Ra2 b6 5. Na3 Ng8 6. Nf3 f5 7. e4 Na6 8. Ke2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "169"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. g3 f5 2. a3 e5 3. h4 Bb4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "170"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. b3 b6 2. d3 a6 3. Bh6 b5 4. h3 c5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "171"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. f4 Na6 2. e3 g5 3. Be2 Rb8 4. Bg4 Nf6 5. Ne2 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "172"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. g4 e6 2. Na3 d5 3. f3 h6 4. Kf2 Qe7 5. e3 Qxa3 6. Qe1 a6 7. Bd3 a5 8. Bh7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "173"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. d4 f5 2. Bf4 g6 3. e3 Nf6 4. Bg5 Ng4 5. a3 h5 6. c3 Nf6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "174"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. g4 h6 2. f3 h5 3. c3 c6 4. Bh3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "175"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. c4 f6 2. e3 b5 3. Qf3 Bb7 4. h3 c6 5. Be2 b4 6. Qg3 e5 7. c5 f5 8. Qf3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "176"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "1-0"]
+
+1. h4 a6 2. d3 c5 3. Nc3 Qa5 4. Bh6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "177"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. d4 Nf6 2. Nf3 Nc6 3. Ng1 b5 4. Nc3 g6 5. d5 Nd4 6. Nh3 e6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "178"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "1/2-1/2"]
+
+1. b3 a5 2. e3 Ra6 3. Qe2 a4 4. a3 c5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "179"]
+[White "EngineB"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. d4 d5 2. c3 f6 3. h4 a6 4. Qc2 e6 5. Qg6+ Kd7 6. Bg5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "180"]
+[White "EngineF"]
+[Black "EngineB"]
+[Result "0-1"]
+
+1. b4 c6 2. a4 Nh6 3. e4 g5 4. Na3 a5 5. Qf3 Bg7 6. g4 Ng8 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "181"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. a4 h5 2. Ra3 f6 3. Rg3 b5 4. b3 Kf7 5. Re3 Rh7 6. Na3 bxa4 7. Nf3 Nc6 8. Nb1 g5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "182"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. a4 e5 2. Nf3 e4 3. Ng1 g6 4. a5 h6 5. f3 a6 6. h4 exf3 7. h5 Qe7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "183"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. c4 b6 2. f4 c6 3. a4 f6 4. e4 g5 5. Ke2 Na6 6. Qc2 b5 7. Qd1 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "184"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. c3 f6 2. g4 a6 3. a3 a5 4. f4 e6 5. g5 Bd6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "185"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. h4 h5 2. b3 Nc6 3. g3 Rh6 4. Na3 d5 5. Nb1 f6 6. d3 b6 7. Bxh6 b5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "186"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. c4 d6 2. f4 f5 3. c5 Qd7 4. Qa4 e5 5. Nf3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "187"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. d4 e6 2. a3 Bxa3 3. Nf3 Qf6 4. Bd2 Bc5 5. g4 Na6 6. Bb4 Ne7 7. Rg1 h6 8. e3 h5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "188"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. b3 c6 2. a4 Nf6 3. Ba3 d5 4. c3 Bd7 5. e3 g5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "189"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. g3 g5 2. Na3 Nf6 3. d3 a6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "190"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. Nf3 Nh6 2. g3 b5 3. d4 Nc6 4. b4 Nxd4 5. Bd2 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "191"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. d4 e5 2. a4 a5 3. Qd2 f5 4. dxe5 Nc6 5. Na3 Qg5 6. Qxa5 Nd4 7. Qd2 Ne6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "192"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. Nh3 b6 2. d3 d5 3. g4 f5 4. Qd2 Qd6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "193"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. h4 g5 2. f4 e6 3. Nh3 Qf6 4. c4 Bc5 5. Qa4 Qg7 6. d4 Ba3 7. Rg1 Ne7 8. Kd1 gxf4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "194"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. b3 c6 2. d4 d5 3. Nh3 Bd7 4. e3 Bxh3 5. b4 Qb6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "195"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. f4 c6 2. f5 a6 3. d4 e6 4. a3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "196"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. a3 a5 2. f3 g6 3. f4 a4 4. Ra2 b6 5. b3 f6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "197"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. c4 f6 2. c5 Nc6 3. f4 f5 4. e4 g6 5. Ne2 h5 6. Ng1 Rh6 7. h4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "198"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. f3 b5 2. b4 Nc6 3. Na3 h6 4. d4 a6 5. Nh3 Na7 6. e3 d5 7. Nf2 c6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "199"]
+[White "EngineC"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. f4 h6 2. d4 f5 3. e3 Nf6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "200"]
+[White "EngineD"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. c3 Nh6 2. b3 e6 3. Nh3 g5 4. Bb2 b6 5. Ng1 Bg7 6. d3 Bf6 7. a4 Kf8 8. g3 Kg8 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "201"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. e4 Nf6 2. Qh5 b6 3. Qh4 Na6 4. c3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "202"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. f4 h5 2. a3 Nh6 3. c4 Ng8 4. b4 b6 5. Qa4 Ba6 6. b5 d6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "203"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. Nh3 Nh6 2. d3 f5 3. g4 d5 4. Na3 b6 5. Bf4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "204"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. f4 a6 2. Na3 d6 3. Rb1 e5 4. Nf3 Nf6 5. d4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "205"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. e3 f6 2. Ne2 Na6 3. d4 Kf7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "206"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. Nf3 e6 2. Ne5 Qh4 3. d3 Qh6 4. Bd2 Bd6 5. Bg5 Bb4+ 6. Nc3 Qh5 7. Qb1 Bxc3+ 8. Kd1 Bd2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "207"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. d4 e6 2. d5 Qe7 3. Bf4 Nf6 4. Kd2 a6 5. h4 d6 6. b4 Kd8 7. b5 c6 8. b6 exd5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "208"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. g4 h6 2. e3 g5 3. Bc4 a5 4. Qe2 f6 5. d4 d6 6. Nc3 b5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "209"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. Nf3 c5 2. b3 a6 3. h4 g5 4. Ng1 e6 5. Na3 Qe7 6. Nf3 gxh4 7. g4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "210"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. a3 Nc6 2. c4 Nd4 3. Nf3 Nb3 4. h3 d5 5. g4 Kd7 6. Nh4 Kd6 7. f4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "211"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. f3 e5 2. g3 c5 3. d3 Qb6 4. Nh3 Qf6 5. Kf2 Na6 6. c3 g5 7. a4 Qd6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "212"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. h4 e6 2. d4 Qf6 3. f4 Qxh4+ 4. Rxh4 f6 5. Nd2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "213"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. d3 a6 2. e3 e5 3. Nd2 Be7 4. f4 g5 5. Rb1 c5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "214"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. a3 b6 2. g4 Nf6 3. c4 Nd5 4. Qa4 Rg8 5. Qc2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "215"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. b4 g5 2. f3 Nc6 3. b5 h6 4. b6 e6 5. d4 g4 6. Bf4 d5 7. Nd2 Ne5 8. Nb1 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "216"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. e4 f5 2. Bc4 a6 3. Nh3 fxe4 4. a4 d5 5. Rg1 e6 6. Bd3 b5 7. Nf4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "217"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. Nf3 Nh6 2. b3 Nf5 3. d4 Ng3 4. Nh4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "218"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. f3 d5 2. e4 Nc6 3. Ne2 f6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "219"]
+[White "EngineC"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. e4 e5 2. Nh3 Ne7 3. f3 f5 4. Nc3 Rg8 5. Ng5 c5 6. d3 Nd5 7. Bd2 Rh8 8. a4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "220"]
+[White "EngineE"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. g4 g6 2. Bg2 Bh6 3. d3 Bf8 4. Be3 h6 5. f4 c6 6. Nd2 e6 7. g5 Nf6 8. Rc1 Qa5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "221"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. e3 c6 2. b3 Qc7 3. g3 g5 4. Ne2 Bg7 5. e4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "222"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. e4 Nf6 2. c3 Rg8 3. d3 Ng4 4. Kd2 b6 5. Qe1 g5 6. Na3 d6 7. Nb1 Rg6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "223"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. e4 d6 2. Nf3 Kd7 3. a3 h6 4. h3 e5 5. c3 Ne7 6. Ng1 Ke8 7. Rh2 Bf5 8. h4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "224"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. Nc3 c6 2. Nh3 d5 3. Nb1 e6 4. a3 a5 5. d3 g6 6. c4 Bb4+ 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "225"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. d4 a6 2. Nf3 Ra7 3. Bd2 e6 4. c4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "226"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "1-0"]
+
+1. a4 a5 2. b3 d6 3. Nh3 d5 4. Ra3 e5 5. g4 d4 6. Bb2 Nc6 7. d3 Nb8 8. Qc1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "227"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. h4 Nc6 2. b4 g6 3. Na3 a5 4. Nb1 Bg7 5. bxa5 Bf6 6. e3 d6 7. Be2 Nxa5 8. Nh3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "228"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. Nh3 c6 2. f4 b6 3. g3 Bb7 4. Bg2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "229"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. f4 c5 2. c4 f5 3. a3 Qc7 4. Nh3 Kd8 5. g3 h5 6. Ng1 g5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "230"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. h4 Nh6 2. e3 g5 3. b3 Nc6 4. Ba3 f5 5. d4 Nf7 6. Qc1 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "231"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. c3 d6 2. g4 Bd7 3. Bh3 Bc8 4. b3 Nd7 5. d3 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "232"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. a3 d6 2. f3 e5 3. d4 Be6 4. d5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "233"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nh3 h5 2. c3 b5 3. d3 e6 4. Na3 d6 5. Bh6 Qe7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "234"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. f3 e5 2. b3 Bc5 3. a3 Bxg1 4. e3 g5 5. c4 h5 6. g3 a6 7. Qc2 Ra7 8. Bg2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "235"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. a3 Na6 2. b4 h6 3. c4 c5 4. Bb2 f5 5. Bxg7 b6 6. e3 Rb8 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "236"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. Nc3 g5 2. a4 f5 3. Nb1 a5 4. e3 Ra7 5. Ke2 Kf7 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "237"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. Nc3 f5 2. d4 e5 3. h3 Qg5 4. g3 a6 5. a3 exd4 6. Rb1 Nf6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "238"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "1/2-1/2"]
+
+1. c4 a5 2. b4 Nc6 3. Qb3 Ne5 4. g3 Ng6 5. Qe3 e5 6. b5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "239"]
+[White "EngineC"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. g4 Na6 2. Nh3 Nb8 3. f3 e6 4. e4 h5 5. gxh5 Na6 6. f4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "240"]
+[White "EngineF"]
+[Black "EngineC"]
+[Result "0-1"]
+
+1. f4 a6 2. a3 f5 3. c4 Ra7 4. g3 Nh6 5. d3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "241"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. Nc3 Na6 2. Nb1 c6 3. c3 h6 4. h4 Nb8 5. g4 f5 6. h5 g5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "242"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. b3 Nc6 2. f3 Nf6 3. Bb2 Rg8 4. Na3 d5 5. Bxf6 a6 6. g4 Be6 7. c4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "243"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. d4 g6 2. e3 Na6 3. e4 e5 4. g3 b5 5. f3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "244"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. g3 g6 2. a4 g5 3. e3 Nh6 4. Qg4 e5 5. b3 Nf5 6. Kd1 Rg8 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "245"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. d3 Nc6 2. b3 Nb8 3. e4 c5 4. Bh6 d6 5. Nd2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "246"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. d3 e5 2. e3 b6 3. Qd2 f6 4. Na3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "247"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. Na3 a6 2. c3 f5 3. f4 h6 4. b4 b6 5. g4 Kf7 6. h4 Nc6 7. Kf2 Bb7 8. Kg2 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "248"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. a3 h6 2. d4 g5 3. a4 Na6 4. f3 h5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "249"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. c4 g6 2. f4 Na6 3. a3 f6 4. Qb3 Nb8 5. Qc3 h5 6. a4 Rh6 7. a5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "250"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. h3 f6 2. g4 b5 3. c4 a5 4. b3 c6 5. d3 d6 6. f3 g5 7. Nd2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "251"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. b4 Nh6 2. h3 d6 3. Nf3 Nd7 4. Rg1 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "252"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. f4 b5 2. e4 e5 3. f5 Be7 4. d3 Bb7 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "253"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. a3 c5 2. Nf3 c4 3. e4 Na6 4. e5 Qb6 5. g4 Qd4 6. Be2 Kd8 7. g5 Qf4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "254"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. f4 Na6 2. g3 h6 3. c4 b6 4. a4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "255"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. g3 a5 2. Nc3 h6 3. Nf3 Nf6 4. b3 Ne4 5. b4 Ng5 6. h3 b6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "256"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. c3 b5 2. g3 f5 3. a4 Bb7 4. Qb3 e5 5. e3 g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "257"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. h3 h6 2. e3 g6 3. a3 a6 4. c4 d6 5. f4 f5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "258"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. b4 d6 2. a4 g6 3. f3 h6 4. Ba3 d5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "259"]
+[White "EngineD"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. h4 d5 2. f3 g5 3. d3 Na6 4. f4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "260"]
+[White "EngineE"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. Nc3 f5 2. b4 a6 3. Ne4 d5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "261"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. f3 e5 2. d3 Qf6 3. Nc3 Qf5 4. h3 a5 5. Nb1 c5 6. g3 Qxd3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "262"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. Nf3 Na6 2. b4 g5 3. Nxg5 Bh6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "263"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. f4 f5 2. Nh3 g5 3. Na3 Kf7 4. fxg5 Nc6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "264"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. Nc3 a6 2. h3 Nc6 3. e3 d5 4. Bb5 Nf6 5. f3 b6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "265"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. g4 Nc6 2. Bg2 Nh6 3. Nh3 a6 4. Ng1 Nf5 5. b3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "266"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. f4 Nh6 2. Nh3 c6 3. Rg1 a6 4. Nc3 g5 5. Nd5 Nf5 6. fxg5 Bh6 7. d4 b5 8. Nb6 Qc7 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "267"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. h3 h5 2. h4 Nc6 3. Nh3 g5 4. d4 Rh7 5. e3 f5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "268"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. f3 h6 2. g4 e5 3. g5 Nf6 4. Kf2 Bc5+ 5. Kg3 O-O 6. g6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "269"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. h3 e6 2. d3 b6 3. Kd2 Ba3 4. f4 Bxb2 5. Ke3 Bxa1 6. Qd2 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "270"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. f3 h5 2. c3 a5 3. Kf2 Ra6 4. b3 Rc6 5. Nh3 Rf6 6. b4 b6 7. g3 Nh6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "271"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. a3 b6 2. a4 a6 3. d4 h5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "272"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. g3 e5 2. Bh3 Ne7 3. e4 Na6 4. Bxd7+ Qxd7 5. Qg4 Rb8 6. Qe6 b5 7. g4 fxe6 8. h3 Nb4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "273"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. g4 h5 2. Bh3 b5 3. c4 b4 4. d4 Bb7 5. Qd2 Nh6 6. Qc2 Qc8 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "274"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "0-1"]
+
+1. h3 c5 2. b3 b6 3. c4 Qc7 4. g3 g5 5. d3 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "275"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. Nf3 e6 2. Nh4 a5 3. a3 Be7 4. g4 c6 5. d4 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "276"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. g3 Na6 2. Nh3 Nc5 3. Ng5 Ne4 4. d3 h6 5. dxe4 b5 6. Be3 hxg5 7. g4 Rh3 8. f3 a5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "277"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. Nh3 b6 2. g4 f6 3. d4 Bb7 4. Bh6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "278"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1/2-1/2"]
+
+1. Nc3 e5 2. a3 g6 3. h3 Nh6 4. d3 b5 5. d4 Bb4 6. Rb1 Nc6 7. Be3 Qg5 8. f3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "279"]
+[White "EngineD"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. e3 d5 2. Nh3 Nf6 3. b4 c5 4. Ng5 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "280"]
+[White "EngineF"]
+[Black "EngineD"]
+[Result "1-0"]
+
+1. a3 h5 2. a4 Na6 3. Nf3 e5 4. b4 h4 5. e4 Qg5 6. Bb5 Qf6 7. Kf1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "281"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. d3 Nc6 2. b3 e6 3. Qd2 a5 4. c3 Be7 5. Qb2 Bf6 6. e4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "282"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. h4 Nc6 2. g4 g6 3. g5 h6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "283"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nh3 a6 2. g3 c6 3. b4 e6 4. c4 Ke7 5. g4 g6 6. a3 b6 7. Qb3 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "284"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. e3 h6 2. Nh3 f5 3. Ng5 d6 4. f3 b5 5. c4 c5 6. a4 Rh7 7. Qb3 Nf6 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "285"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. c3 Na6 2. c4 e5 3. c5 Nxc5 4. g4 a5 5. Nf3 Qh4 6. a4 Qe7 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "286"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. d4 g5 2. f4 c6 3. h3 Bg7 4. b3 Qc7 5. h4 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "287"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. Nc3 b5 2. e4 Nf6 3. Qh5 a5 4. Qc5 Ng8 5. Nxb5 h6 6. Nd4 c6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "288"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. b3 f5 2. g3 e6 3. Bh3 Bb4 4. Nf3 Qe7 5. Ng5 Qf8 6. Bxf5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "289"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. g4 Na6 2. d4 c6 3. f4 Nb8 4. f5 e6 5. Na3 Ke7 6. c4 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "290"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. c3 a5 2. Nf3 h6 3. c4 Ra7 4. Nh4 f6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "291"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. d4 Nf6 2. h4 g6 3. Bg5 Ng8 4. Bh6 g5 5. b4 f5 6. b5 c5 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "292"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. Na3 h6 2. Nh3 Rh7 3. Nf4 d6 4. Nh3 Bg4 5. c3 Bh5 6. d4 f5 7. d5 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "293"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. d3 Nc6 2. Nh3 Rb8 3. Bh6 g5 4. a4 Ra8 5. Bxg5 h6 6. Bh4 Nf6 7. Ra2 Rh7 8. Ng1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "294"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1/2-1/2"]
+
+1. h4 e5 2. Rh3 Qxh4 3. d4 g6 4. Kd2 Qe4 5. Kc3 Ke7 6. Qe1 Qxd4+ 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "295"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "0-1"]
+
+1. Nf3 a5 2. c4 c5 3. Qb3 b5 4. Qd3 d6 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "296"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "0-1"]
+
+1. e4 Nf6 2. Ne2 h6 3. d3 Ng8 4. Nbc3 e6 5. g3 a5 6. h4 Ra6 7. Rh3 Ne7 0-1
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "297"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1/2-1/2"]
+
+1. e4 c5 2. f4 h5 3. Qg4 g5 4. a3 Na6 5. fxg5 Qa5 6. Nh3 1/2-1/2
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "298"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. e3 Nh6 2. b4 e6 3. Nf3 c5 4. Nc3 cxb4 5. Rg1 b3 6. Bd3 Qb6 7. Ba6 Qd6 8. Nb1 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "299"]
+[White "EngineE"]
+[Black "EngineF"]
+[Result "1-0"]
+
+1. e3 b5 2. b4 a6 3. Qe2 h6 1-0
+
+[Event "Synthetic Engine Round Robin"]
+[Site "Local"]
+[Date "????.??.??"]
+[Round "300"]
+[White "EngineF"]
+[Black "EngineE"]
+[Result "1-0"]
+
+1. b3 a6 2. d4 Nh6 3. a3 b6 4. g3 c5 5. Kd2 e5 6. Bh3 d5 7. f4 c4 8. dxe5 1-0
+
