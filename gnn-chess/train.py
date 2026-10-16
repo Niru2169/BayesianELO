@@ -4,7 +4,7 @@ import sys
 
 import torch
 
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'ours_gpu_extras'))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
 from data import load_data
 from graph_builder import GraphBuilder
 from training_utils import evaluate, make_lr_schedule, save_checkpoint, train_step

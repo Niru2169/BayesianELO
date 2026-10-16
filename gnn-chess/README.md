@@ -45,9 +45,14 @@ py -3.10 -m venv ..\.venv
 - `model.py` input block, full (attention) block, multi-head attention, output heads, `LOSSES` and the loss (`compute_loss`: the sum of the 11 head losses)
 - `preprocess.py` PGN -> shards: result filter, random subsampling, opening down-weighting
 - `train.py` training loop
-- `plays.py` play against the model (greedy policy, or `--search`)
+- `plays.py` play against the model (top-p / nucleus policy by default, or `--search`)
 - `play.py` plays the model against Stockfish to estimate Elo
 
-Supporting code lives in the sibling folder `..\..\ours_gpu_extras`: move encoding (`chessutil.py`), batched graph
+Move selection uses top-p (nucleus) sampling: the candidate moves are the smallest set whose
+combined policy probability reaches `--top-p` (default 0.9, i.e. the top 90% of the mass). Use
+`--greedy` to take the most probable candidate inside that set instead of sampling, and `--seed`
+for reproducible sampling.
+
+Supporting code lives in the sibling folder `..\ours_gpu_extras`: move encoding (`chessutil.py`), batched graph
 building (`graph_builder.py`), training targets (`targets_and_loss.py`), training helpers (`training_utils.py`),
 data loading (`data.py`), label computation for preprocessing (`labels.py`) and the minimax search (`search.py`).

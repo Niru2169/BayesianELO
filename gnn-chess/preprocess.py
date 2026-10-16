@@ -6,7 +6,7 @@ import chess
 import chess.pgn
 import numpy as np
 
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'ours_gpu_extras'))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
 from labels import build_rows, record_game, save_shard
 
 RESULTS = {'1-0': 0, '1/2-1/2': 1, '0-1': 2}

@@ -11,7 +11,7 @@ from layers import (
     global_average_pooling, scatter_and_aggregate, scatter_and_softmax,
 )
 
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'ours_gpu_extras'))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
 from targets_and_loss import (
     _binary_crossentropy, _binary_crossentropy_per_position, _categorical_crossentropy,
     _sigmoid_mae, _softmax_over_edges,

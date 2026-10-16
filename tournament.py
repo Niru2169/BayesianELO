@@ -11,7 +11,7 @@ import torch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(HERE, 'gnn-chess'))
-sys.path.append(os.path.join(HERE, '..', 'ours_gpu_extras'))
+sys.path.append(os.path.join(HERE, 'ours_gpu_extras'))
 from graph_builder import GraphBuilder
 from plays import load_model, model_move
 from search import search_move
