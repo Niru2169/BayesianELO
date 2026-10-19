@@ -13,15 +13,18 @@ from plays import load_model, model_move
 from search import search_move
 
 
-def play_game(model, graph_builder, engine, limit, model_is_white: bool, use_search: bool,
-              depth: int, top_p: float = 0.9, sample: bool = True, generator=None) -> float:
+def play_game(model, graph_builder, engine, limit, model_is_white: bool, search_mode: str,
+              depth: int, simulations: int = 64, n_subgraphs: int = 1,
+              top_p: float = 0.9, sample: bool = True, generator=None) -> float:
     board = chess.Board()
     model_color = chess.WHITE if model_is_white else chess.BLACK
 
     while not board.is_game_over(claim_draw=True):
         if board.turn == model_color:
-            if use_search:
-                move = search_move(model, graph_builder, board, max_depth=depth)
+            if search_mode in ('minimax', 'mcts'):
+                move = search_move(model, graph_builder, board, max_depth=depth,
+                                   mode=search_mode, simulations=simulations,
+                                   n_subgraphs=n_subgraphs)
             else:
                 move = model_move(model, graph_builder, board, top_p=top_p,
                                   sample=sample, generator=generator)
@@ -52,6 +55,10 @@ def main():
     parser.add_argument('--games', type=int, default=10)
     parser.add_argument('--movetime', type=float, default=0.1, help='seconds per Stockfish move')
     parser.add_argument('--search', action='store_true', help='use shallow minimax on top of the policy')
+    parser.add_argument('--search-mode', choices=['none', 'minimax', 'mcts'], default='none',
+                        help='search algorithm to use during play')
+    parser.add_argument('--simulations', type=int, default=64, help='MCTS simulations per move')
+    parser.add_argument('--subgraphs', type=int, default=1, help='subgraph ensemble size (&gt;=1)')
     parser.add_argument('--depth', type=int, default=4)
     parser.add_argument('--top-p', type=float, default=0.9,
                         help='probability mass (0-1] covered by the candidate moves (nucleus selection)')
@@ -70,12 +77,15 @@ def main():
     if args.seed is not None:
         generator = torch.Generator(device=device).manual_seed(args.seed)
 
+    search_mode = 'minimax' if (args.search and args.search_mode == 'none') else args.search_mode
+
     try:
         total_score, wins, draws, losses = 0.0, 0, 0, 0
         for game_number in range(args.games):
             model_is_white = game_number % 2 == 0
-            score = play_game(model, graph_builder, engine, limit, model_is_white, args.search,
-                              args.depth, top_p=args.top_p, sample=not args.greedy, generator=generator)
+            score = play_game(model, graph_builder, engine, limit, model_is_white, search_mode,
+                              args.depth, args.simulations, args.subgraphs,
+                              top_p=args.top_p, sample=not args.greedy, generator=generator)
             total_score += score
             if score == 1.0:
                 wins += 1

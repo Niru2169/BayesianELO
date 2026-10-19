@@ -151,6 +151,10 @@ def main():
     parser.add_argument('model_path')
     parser.add_argument('--model-plays', choices=['white', 'black'], default='black')
     parser.add_argument('--search', action='store_true', help='use shallow minimax on top of the policy')
+    parser.add_argument('--search-mode', choices=['none', 'minimax', 'mcts'], default='none',
+                        help='search algorithm to use during play')
+    parser.add_argument('--simulations', type=int, default=64, help='MCTS simulations per move')
+    parser.add_argument('--subgraphs', type=int, default=1, help='subgraph ensemble size (&gt;=1)')
     parser.add_argument('--depth', type=int, default=4)
     parser.add_argument('--top-p', type=float, default=0.9,
                         help='probability mass (0-1] covered by the candidate moves (nucleus selection)')
@@ -168,11 +172,15 @@ def main():
     if args.seed is not None:
         generator = torch.Generator(device=device).manual_seed(args.seed)
 
+    search_mode = 'minimax' if (args.search and args.search_mode == 'none') else args.search_mode
+
     print(board)
     while not board.is_game_over():
         if board.turn == model_color:
-            if args.search:
-                move = search_move(model, graph_builder, board, max_depth=args.depth)
+            if search_mode in ('minimax', 'mcts'):
+                move = search_move(model, graph_builder, board, max_depth=args.depth,
+                                   mode=search_mode, simulations=args.simulations,
+                                   n_subgraphs=args.subgraphs)
             else:
                 move = model_move(model, graph_builder, board, top_p=args.top_p,
                                   sample=not args.greedy, generator=generator)

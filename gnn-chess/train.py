@@ -7,7 +7,8 @@ import torch
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
 from data import load_data
 from graph_builder import GraphBuilder
-from training_utils import evaluate, make_lr_schedule, save_checkpoint, train_step
+from search import distill_search_step
+from training_utils import batch_to_chess_boards, evaluate, make_lr_schedule, save_checkpoint, train_step
 from model import ChessGNN
 
 LEARNING_RATE = 5e-4
@@ -21,6 +22,12 @@ def main():
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--batch-size', type=int, default=256)
     parser.add_argument('--save', default='chessgnn.pt')
+    parser.add_argument('--distill-mode', choices=['none', 'minimax', 'mcts', 'both'], default='none',
+                        help='Search distillation strategy for refining policy & value heads')
+    parser.add_argument('--distill-every', type=int, default=50,
+                        help='Run a search distillation refinement step every N supervised steps')
+    parser.add_argument('--distill-boards', type=int, default=8,
+                        help='Number of positions per distillation step')
     args = parser.parse_args()
 
     assert torch.cuda.is_available(), 'CUDA not available - check the torch install'
@@ -46,8 +53,18 @@ def main():
             if step >= total_steps:
                 break
             indices = shuffled[start:start + args.batch_size]
-            loss, losses = train_step(model, optimizer, scheduler, graph_builder, train_data, indices)
+            progress = step / max(1, total_steps)
+            loss, losses = train_step(model, optimizer, scheduler, graph_builder, train_data, indices, progress=progress)
             step += 1
+
+            if args.distill_mode != 'none' and step % args.distill_every == 0:
+                boards = batch_to_chess_boards(train_data.batch(indices[:args.distill_boards]),
+                                               max_boards=args.distill_boards)
+                if boards:
+                    d_loss = distill_search_step(model, optimizer, graph_builder, boards,
+                                                 mode=args.distill_mode)
+                    if step % LOG_EVERY == 0:
+                        print(f'  [distill:{args.distill_mode}] loss {d_loss:.4f}', flush=True)
 
             if step % LOG_EVERY == 0:
                 print(f'step {step}/{total_steps}  loss {loss.item():.4f}  '
