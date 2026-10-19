@@ -7,6 +7,7 @@ import chess.pgn
 import numpy as np
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
+from chessutil import pos_key
 from labels import build_rows, record_game, save_shard
 
 RESULTS = {'1-0': 0, '1/2-1/2': 1, '0-1': 2}
@@ -20,22 +21,34 @@ def keep_prob(ply: int, sample_rate: float) -> float:
     return sample_rate * (1.0 - opening_drop)
 
 
-def sample_plies(n_moves: int, sample_rate: float, rng) -> set:
-    return {ply for ply in range(n_moves) if rng.random() < keep_prob(ply, sample_rate)}
+def sample_plies_strict_dedup(board: chess.Board, moves: list, sample_rate: float,
+                              rng, seen_positions: set) -> set:
+    """Samples plies while strictly skipping any board state already in `seen_positions`."""
+    sampled = set()
+    sim_board = board.copy()
+    for ply, move in enumerate(moves):
+        key = pos_key(sim_board)
+        if key not in seen_positions:
+            if rng.random() < keep_prob(ply, sample_rate):
+                sampled.add(ply)
+                seen_positions.add(key)
+        sim_board.push(move)
+    return sampled
 
 
-def process_game(game: chess.pgn.Game, sample_rate: float, rng):
+def process_game(game: chess.pgn.Game, sample_rate: float, rng, seen_positions: set):
     result = RESULTS.get(game.headers.get('Result', ''))
     if result is None:
         return None
 
     moves = list(game.mainline_moves())
-    n_moves = len(moves)
-    if n_moves < 2:
+    if len(moves) < 2:
         return None
 
     board = game.board()
-    sampled_plies = sample_plies(n_moves, sample_rate, rng)
+    sampled_plies = sample_plies_strict_dedup(board, moves, sample_rate, rng, seen_positions)
+    if not sampled_plies:
+        return None
     move_infos, states = record_game(board, moves, sampled_plies)
     return build_rows(move_infos, states, result)
 
@@ -53,13 +66,14 @@ def main():
     games_in_shard = 0
     shard_id = 0
     n_positions = 0
+    seen_positions = set()  # Strict global deduplication tracker
 
     with open(args.pgn, 'r', encoding='utf-8', errors='replace') as pgn_file:
         while True:
             game = chess.pgn.read_game(pgn_file)
             if game is None:
                 break
-            game_rows = process_game(game, args.sample_rate, rng)
+            game_rows = process_game(game, args.sample_rate, rng, seen_positions)
             if game_rows:
                 rows.extend(game_rows)
             games_in_shard += 1
@@ -73,7 +87,7 @@ def main():
     if save_shard(rows, args.out, shard_id):
         shard_id += 1
         n_positions += len(rows)
-    print(f'done: {n_positions:,} positions in {shard_id} shards -> {args.out}')
+    print(f'done: {n_positions:,} unique positions in {shard_id} shards -> {args.out}')
 
 
 if __name__ == '__main__':

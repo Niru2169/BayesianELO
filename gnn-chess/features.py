@@ -4,6 +4,7 @@ from graph_utils import piece_types
 
 NODE_FEATURES = 12
 GLOBAL_FEATURES = 8
+EDGE_GEO_FEATURES = 14  # New geometric & directional edge features (AlphaGateau-inspired)
 BOARD_CENTRE = 3.5
 SQUARE_COORD_SCALE = 0.3
 HALFMOVE_SCALE = 0.04
@@ -58,3 +59,36 @@ def global_features(castle, turn, halfmove, repetition) -> torch.Tensor:
 
 def plies_till_end_transform(n_plies: torch.Tensor) -> torch.Tensor:
     return torch.exp(-PLIES_DECAY * (n_plies.float() - 1.0))
+
+
+def edge_geometric_features(from_square: torch.Tensor, to_square: torch.Tensor) -> torch.Tensor:
+    """Computes 14-dim spatial/directional edge features (Rigaux & Kashima / AlphaGateau style)."""
+    r1, c1 = (from_square // 8).float(), (from_square % 8).float()
+    r2, c2 = (to_square // 8).float(), (to_square % 8).float()
+    dr = (r2 - r1) / 7.0
+    dc = (c2 - c1) / 7.0
+
+    abs_dr, abs_dc = (r2 - r1).abs(), (c2 - c1).abs()
+    manhattan = (abs_dr + abs_dc) / 14.0
+    chebyshev = torch.maximum(abs_dr, abs_dc) / 7.0
+
+    is_self = ((from_square == to_square)).float()
+    is_knight = ((abs_dr * abs_dr + abs_dc * abs_dc) == 5).float()
+
+    # 8 compass directions (N, S, E, W, NE, NW, SE, SW)
+    is_ortho = (abs_dr == 0) | (abs_dc == 0)
+    is_diag = (abs_dr == abs_dc) & (abs_dr > 0)
+
+    dir_N = ((r2 > r1) & (abs_dc == 0)).float()
+    dir_S = ((r2 < r1) & (abs_dc == 0)).float()
+    dir_E = ((c2 > c1) & (abs_dr == 0)).float()
+    dir_W = ((c2 < c1) & (abs_dr == 0)).float()
+    dir_NE = (is_diag & (r2 > r1) & (c2 > c1)).float()
+    dir_NW = (is_diag & (r2 > r1) & (c2 < c1)).float()
+    dir_SE = (is_diag & (r2 < r1) & (c2 > c1)).float()
+    dir_SW = (is_diag & (r2 < r1) & (c2 < c1)).float()
+
+    return torch.stack([
+        dr, dc, manhattan, chebyshev, is_self, is_knight,
+        dir_N, dir_S, dir_E, dir_W, dir_NE, dir_NW, dir_SE, dir_SW
+    ], dim=-1)

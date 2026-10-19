@@ -10,13 +10,41 @@ SHARD_KEYS = ['board', 'ep', 'castle', 'turn', 'half', 'rep', 'next_from', 'next
               'moved', 'captured', 'chk', 'ptte', 'result', 'legal_len', 'legal_data']
 
 
-def load_shards(files: list) -> dict:
+def load_shards(files: list, strict_dedup: bool = True) -> dict:
     parts = {key: [] for key in SHARD_KEYS}
     for file in files:
         with np.load(file) as shard:
             for key in SHARD_KEYS:
                 parts[key].append(shard[key])
-    return {key: np.concatenate(arrays) for key, arrays in parts.items()}
+    raw = {key: np.concatenate(arrays) for key, arrays in parts.items()}
+
+    if not strict_dedup:
+        return raw
+
+    # Strict deduplication across (board [64], turn [1], castle [1], ep [1])
+    state_sig = np.concatenate([
+        raw['board'],
+        raw['turn'][:, None],
+        raw['castle'][:, None],
+        raw['ep'][:, None].view(np.uint8),
+    ], axis=1)
+    _, unique_indices = np.unique(state_sig, axis=0, return_index=True)
+    unique_indices = np.sort(unique_indices)
+
+    # Rebuild variable-length legal_data slices for unique positions
+    lengths = raw['legal_len']
+    starts = np.cumsum(lengths) - lengths
+    kept_legal_slices = [
+        raw['legal_data'][starts[i]:starts[i] + lengths[i]] for i in unique_indices
+    ]
+
+    deduped = {
+        key: raw[key][unique_indices] for key in SHARD_KEYS if key != 'legal_data'
+    }
+    deduped['legal_data'] = (
+        np.concatenate(kept_legal_slices) if kept_legal_slices else np.empty(0, dtype=np.uint16)
+    )
+    return deduped
 
 
 class GPUData:
@@ -61,6 +89,6 @@ class GPUData:
 
 def load_data(data_dir: str, device, val_shards: int = 2):
     files = sorted(glob.glob(os.path.join(data_dir, 'shard_*.npz')))
-    train = GPUData(load_shards(files[:-val_shards]), device)
-    val = GPUData(load_shards(files[-val_shards:]), device)
+    train = GPUData(load_shards(files[:-val_shards], strict_dedup=True), device)
+    val = GPUData(load_shards(files[-val_shards:], strict_dedup=True), device)
     return train, val
