@@ -13,8 +13,7 @@ from plays import load_model, model_move
 from search import search_move
 
 
-def play_game(model, graph_builder, engine, limit, model_is_white: bool, use_search: bool,
-              depth: int, top_p: float = 0.9, sample: bool = True, generator=None) -> float:
+def play_game(model, graph_builder, engine, limit, model_is_white: bool, use_search: bool, depth: int) -> float:
     board = chess.Board()
     model_color = chess.WHITE if model_is_white else chess.BLACK
 
@@ -23,8 +22,7 @@ def play_game(model, graph_builder, engine, limit, model_is_white: bool, use_sea
             if use_search:
                 move = search_move(model, graph_builder, board, max_depth=depth)
             else:
-                move = model_move(model, graph_builder, board, top_p=top_p,
-                                  sample=sample, generator=generator)
+                move = model_move(model, graph_builder, board)
             if move not in board.legal_moves:
                 return 0.0
         else:
@@ -53,11 +51,6 @@ def main():
     parser.add_argument('--movetime', type=float, default=0.1, help='seconds per Stockfish move')
     parser.add_argument('--search', action='store_true', help='use shallow minimax on top of the policy')
     parser.add_argument('--depth', type=int, default=4)
-    parser.add_argument('--top-p', type=float, default=0.9,
-                        help='probability mass (0-1] covered by the candidate moves (nucleus selection)')
-    parser.add_argument('--greedy', action='store_true',
-                        help='take the most probable candidate instead of sampling from the nucleus')
-    parser.add_argument('--seed', type=int, default=None, help='RNG seed for reproducible sampling')
     args = parser.parse_args()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -66,16 +59,11 @@ def main():
     engine.configure({'UCI_LimitStrength': True, 'UCI_Elo': args.elo})
     limit = chess.engine.Limit(time=args.movetime)
 
-    generator = None
-    if args.seed is not None:
-        generator = torch.Generator(device=device).manual_seed(args.seed)
-
     try:
         total_score, wins, draws, losses = 0.0, 0, 0, 0
         for game_number in range(args.games):
             model_is_white = game_number % 2 == 0
-            score = play_game(model, graph_builder, engine, limit, model_is_white, args.search,
-                              args.depth, top_p=args.top_p, sample=not args.greedy, generator=generator)
+            score = play_game(model, graph_builder, engine, limit, model_is_white, args.search, args.depth)
             total_score += score
             if score == 1.0:
                 wins += 1

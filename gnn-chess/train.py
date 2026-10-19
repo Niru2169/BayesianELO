@@ -21,10 +21,17 @@ def main():
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--batch-size', type=int, default=256)
     parser.add_argument('--save', default='chessgnn.pt')
+    parser.add_argument('--device', default='cuda', choices=['cuda', 'cpu', 'xla'],
+                        help='cuda/cpu for local training; xla for a Google Cloud TPU (needs torch_xla)')
     args = parser.parse_args()
 
-    assert torch.cuda.is_available(), 'CUDA not available - check the torch install'
-    device = torch.device('cuda')
+    if args.device == 'xla':
+        import torch_xla.core.xla_model as xm
+        device = xm.xla_device()
+    else:
+        device = torch.device(args.device)
+        if args.device == 'cuda':
+            assert torch.cuda.is_available(), 'CUDA not available - check the torch install'
 
     print('loading data ...', flush=True)
     train_data, val_data = load_data(args.data, device)
@@ -48,6 +55,8 @@ def main():
             indices = shuffled[start:start + args.batch_size]
             loss, losses = train_step(model, optimizer, scheduler, graph_builder, train_data, indices)
             step += 1
+            if args.device == 'xla':
+                xm.mark_step()
 
             if step % LOG_EVERY == 0:
                 print(f'step {step}/{total_steps}  loss {loss.item():.4f}  '

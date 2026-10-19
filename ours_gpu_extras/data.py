@@ -61,6 +61,11 @@ class GPUData:
 
 def load_data(data_dir: str, device, val_shards: int = 2):
     files = sorted(glob.glob(os.path.join(data_dir, 'shard_*.npz')))
-    train = GPUData(load_shards(files[:-val_shards]), device)
-    val = GPUData(load_shards(files[-val_shards:]), device)
+    if not files:
+        raise SystemExit(f'no training shards in {data_dir} - run preprocess.py first')
+    val_shards = min(val_shards, len(files) - 1)
+    train_files = files[:-val_shards] if val_shards else files
+    val_files = files[-val_shards:] if val_shards else files
+    train = GPUData(load_shards(train_files), device)
+    val = GPUData(load_shards(val_files), device)
     return train, val

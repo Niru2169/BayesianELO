@@ -1,0 +1,18 @@
+# GNN engine (gnn-chess/ + ours_gpu_extras/). Python 3.10+.
+#
+# Loose pins on purpose: this installs on any machine (including a GCE VM)
+# without a CUDA index. For an RTX 50-series / Blackwell GPU, install torch
+# from the cu128 wheels first, then the rest:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cu128 torch>=2.7
+# (or uncomment the line below and install everything in one go).
+#--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.7
+numpy>=1.24
+chess>=1.11
+# Only needed for the offline BayesElo rating CLI (bayes_elo.py), not for the GNN.
+scipy>=1.11
+
+# Optional: Google Cloud TPU support. The version must match the torch version
+# (torch 2.11 -> torch_xla 2.11) and the VM needs a TPU runtime. Then train with
+#   python gnn-chess/train.py --device xla
+#torch_xla==2.11.*

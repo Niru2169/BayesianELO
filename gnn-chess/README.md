@@ -18,24 +18,24 @@ board ──graph_utils.py──> edges (pieces' mobility rules)
 
 ## Setup
 ```
-py -3.10 -m venv ..\.venv
-..\.venv\Scripts\python -m pip install torch --index-url https://download.pytorch.org/whl/cu128
-..\.venv\Scripts\python -m pip install numpy python-chess
+py -3.10 -m venv .venv
+.venv\Scripts\python -m pip install torch --index-url https://download.pytorch.org/whl/cu128
+.venv\Scripts\python -m pip install numpy python-chess
 ```
 
 ## Run
 ```
 # 1) once: PGN -> shards
-..\.venv\Scripts\python preprocess.py games.pgn --out data --sample-rate 0.1
+.venv\Scripts\python preprocess.py games.pgn --out data --sample-rate 0.1
 
 # 2) train (whole dataset is held on the GPU)
-..\.venv\Scripts\python train.py --data data --epochs 3 --batch-size 256 --save chessgnn.pt
+.venv\Scripts\python train.py --data data --epochs 3 --batch-size 256 --save chessgnn.pt
 
 # 3) play (add --search for minimax on top of the network)
-..\.venv\Scripts\python plays.py chessgnn.pt --model-plays black
+.venv\Scripts\python plays.py chessgnn.pt --model-plays black
 
 # 4) optional: estimate Elo against Stockfish
-..\.venv\Scripts\python play.py --stockfish "C:\stockfish\stockfish.exe" --elo 1320 --games 10
+.venv\Scripts\python play.py --stockfish "C:\stockfish\stockfish.exe" --elo 1320 --games 10
 ```
 
 ## Files
@@ -45,13 +45,8 @@ py -3.10 -m venv ..\.venv
 - `model.py` input block, full (attention) block, multi-head attention, output heads, `LOSSES` and the loss (`compute_loss`: the sum of the 11 head losses)
 - `preprocess.py` PGN -> shards: result filter, random subsampling, opening down-weighting
 - `train.py` training loop
-- `plays.py` play against the model (top-p / nucleus policy by default, or `--search`)
+- `plays.py` play against the model (greedy policy, or `--search`)
 - `play.py` plays the model against Stockfish to estimate Elo
-
-Move selection uses top-p (nucleus) sampling: the candidate moves are the smallest set whose
-combined policy probability reaches `--top-p` (default 0.9, i.e. the top 90% of the mass). Use
-`--greedy` to take the most probable candidate inside that set instead of sampling, and `--seed`
-for reproducible sampling.
 
 Supporting code lives in the sibling folder `..\ours_gpu_extras`: move encoding (`chessutil.py`), batched graph
 building (`graph_builder.py`), training targets (`targets_and_loss.py`), training helpers (`training_utils.py`),
