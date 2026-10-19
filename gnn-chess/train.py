@@ -43,6 +43,11 @@ def main():
 
     steps_per_epoch = train_data.n // args.batch_size
     total_steps = steps_per_epoch * args.epochs
+    if total_steps == 0:
+        raise SystemExit(
+            f'not enough data: {train_data.n:,} positions with --batch-size {args.batch_size} '
+            f'gives 0 training steps - use a smaller --batch-size or preprocess more games'
+        )
     scheduler = make_lr_schedule(optimizer, total_steps)
 
     step = 0

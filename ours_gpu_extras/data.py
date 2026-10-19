@@ -89,6 +89,18 @@ class GPUData:
 
 def load_data(data_dir: str, device, val_shards: int = 2):
     files = sorted(glob.glob(os.path.join(data_dir, 'shard_*.npz')))
-    train = GPUData(load_shards(files[:-val_shards], strict_dedup=True), device)
-    val = GPUData(load_shards(files[-val_shards:], strict_dedup=True), device)
+    if not files:
+        raise FileNotFoundError(f'no shard_*.npz files in {data_dir!r} - run preprocess.py first')
+
+    # Always keep at least one shard for training: a small PGN yields fewer shards
+    # than the default hold-out asks for, and an empty train set is a hard error.
+    n_val = max(0, min(val_shards, len(files) - 1))
+    train = GPUData(load_shards(files[:len(files) - n_val], strict_dedup=True), device)
+    if n_val:
+        val = GPUData(load_shards(files[len(files) - n_val:], strict_dedup=True), device)
+    else:
+        # Single shard: evaluate on the training data. The loss curve is still
+        # meaningful at this size; a real hold-out needs at least two shards.
+        print(f'warning: only {len(files)} shard available - evaluating on the training data')
+        val = train
     return train, val
