@@ -13,14 +13,17 @@ from plays import load_model, model_move
 from search import search_move
 
 
-def play_game(model, graph_builder, engine, limit, model_is_white: bool, use_search: bool, depth: int) -> float:
+def play_game(model, graph_builder, engine, limit, model_is_white: bool, search_mode: str,
+              depth: int, simulations: int = 64, n_subgraphs: int = 1) -> float:
     board = chess.Board()
     model_color = chess.WHITE if model_is_white else chess.BLACK
 
     while not board.is_game_over(claim_draw=True):
         if board.turn == model_color:
-            if use_search:
-                move = search_move(model, graph_builder, board, max_depth=depth)
+            if search_mode in ('minimax', 'mcts'):
+                move = search_move(model, graph_builder, board, max_depth=depth,
+                                   mode=search_mode, simulations=simulations,
+                                   n_subgraphs=n_subgraphs)
             else:
                 move = model_move(model, graph_builder, board)
             if move not in board.legal_moves:
@@ -50,6 +53,10 @@ def main():
     parser.add_argument('--games', type=int, default=10)
     parser.add_argument('--movetime', type=float, default=0.1, help='seconds per Stockfish move')
     parser.add_argument('--search', action='store_true', help='use shallow minimax on top of the policy')
+    parser.add_argument('--search-mode', choices=['none', 'minimax', 'mcts'], default='none',
+                        help='search algorithm to use during play')
+    parser.add_argument('--simulations', type=int, default=64, help='MCTS simulations per move')
+    parser.add_argument('--subgraphs', type=int, default=1, help='subgraph ensemble size (>=1)')
     parser.add_argument('--depth', type=int, default=4)
     args = parser.parse_args()
 
@@ -59,11 +66,14 @@ def main():
     engine.configure({'UCI_LimitStrength': True, 'UCI_Elo': args.elo})
     limit = chess.engine.Limit(time=args.movetime)
 
+    search_mode = 'minimax' if (args.search and args.search_mode == 'none') else args.search_mode
+
     try:
         total_score, wins, draws, losses = 0.0, 0, 0, 0
         for game_number in range(args.games):
             model_is_white = game_number % 2 == 0
-            score = play_game(model, graph_builder, engine, limit, model_is_white, args.search, args.depth)
+            score = play_game(model, graph_builder, engine, limit, model_is_white, search_mode,
+                              args.depth, args.simulations, args.subgraphs)
             total_score += score
             if score == 1.0:
                 wins += 1

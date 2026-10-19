@@ -6,7 +6,7 @@ import torch
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'gnn-chess'))
 from chessutil import MAX_COUNT, board_array, castle_bits, ep_square
-from features import global_features, node_features
+from features import edge_geometric_features, global_features, node_features
 from graph_utils import board_to_coo
 
 MAX_EDGES_PER_POSITION = 64 * 64
@@ -42,6 +42,7 @@ class GraphBuilder:
         return dict(
             node_features=node_features(board, en_passant),
             global_features=global_features(castle, turn, halfmove, repetition),
+            edge_geo_features=edge_geometric_features(from_square, to_square),
             receiver=position * 64 + from_square,
             sender=position * 64 + to_square,
             edge_position=position,

@@ -4,6 +4,7 @@ from graph_utils import piece_types
 
 NODE_FEATURES = 12
 GLOBAL_FEATURES = 8
+EDGE_GEO_FEATURES = 14  # geometric & directional edge features (AlphaGateau style)
 BOARD_CENTRE = 3.5
 SQUARE_COORD_SCALE = 0.3
 HALFMOVE_SCALE = 0.04
@@ -58,3 +59,39 @@ def global_features(castle, turn, halfmove, repetition) -> torch.Tensor:
 
 def plies_till_end_transform(n_plies: torch.Tensor) -> torch.Tensor:
     return torch.exp(-PLIES_DECAY * (n_plies.float() - 1.0))
+
+
+def edge_geometric_features(from_square: torch.Tensor, to_square: torch.Tensor) -> torch.Tensor:
+    """14-dim spatial/directional features for every directed edge (AlphaGateau style).
+
+    Rank/file offsets, normalized Manhattan/Chebyshev distances, self-loop and
+    knight-jump indicators, and an 8-way compass one-hot.
+    """
+    r1, c1 = (from_square // 8).float(), (from_square % 8).float()
+    r2, c2 = (to_square // 8).float(), (to_square % 8).float()
+    dr = (r2 - r1) / 7.0
+    dc = (c2 - c1) / 7.0
+
+    abs_dr, abs_dc = (r2 - r1).abs(), (c2 - c1).abs()
+    manhattan = (abs_dr + abs_dc) / 14.0
+    chebyshev = torch.maximum(abs_dr, abs_dc) / 7.0
+
+    is_self = (from_square == to_square).float()
+    is_knight = ((abs_dr * abs_dr + abs_dc * abs_dc) == 5).float()
+
+    is_ortho = (abs_dr == 0) | (abs_dc == 0)
+    is_diag = (abs_dr == abs_dc) & (abs_dr > 0)
+
+    dir_n = ((r2 > r1) & (abs_dc == 0)).float()
+    dir_s = ((r2 < r1) & (abs_dc == 0)).float()
+    dir_e = ((c2 > c1) & (abs_dr == 0)).float()
+    dir_w = ((c2 < c1) & (abs_dr == 0)).float()
+    dir_ne = (is_diag & (r2 > r1) & (c2 > c1)).float()
+    dir_nw = (is_diag & (r2 > r1) & (c2 < c1)).float()
+    dir_se = (is_diag & (r2 < r1) & (c2 > c1)).float()
+    dir_sw = (is_diag & (r2 < r1) & (c2 < c1)).float()
+
+    return torch.stack([
+        dr, dc, manhattan, chebyshev, is_self, is_knight,
+        dir_n, dir_s, dir_e, dir_w, dir_ne, dir_nw, dir_se, dir_sw,
+    ], dim=-1)

@@ -7,7 +7,8 @@ import torch
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
 from data import load_data
 from graph_builder import GraphBuilder
-from training_utils import evaluate, make_lr_schedule, save_checkpoint, train_step
+from search import distill_search_step
+from training_utils import batch_to_chess_boards, evaluate, make_lr_schedule, save_checkpoint, train_step
 from model import ChessGNN
 
 LEARNING_RATE = 5e-4
@@ -23,6 +24,16 @@ def main():
     parser.add_argument('--save', default='chessgnn.pt')
     parser.add_argument('--device', default='cuda', choices=['cuda', 'cpu', 'xla'],
                         help='cuda/cpu for local training; xla for a Google Cloud TPU (needs torch_xla)')
+    parser.add_argument('--distill-mode', choices=['none', 'minimax', 'mcts', 'both'], default='none',
+                        help='search distillation strategy for refining policy & value heads')
+    parser.add_argument('--distill-every', type=int, default=50,
+                        help='run a search distillation step every N supervised steps')
+    parser.add_argument('--distill-boards', type=int, default=8,
+                        help='number of positions per distillation step')
+    parser.add_argument('--search-mode', choices=['none', 'minimax', 'mcts'], default='none',
+                        help='search algorithm used by the distillation targets')
+    parser.add_argument('--simulations', type=int, default=64, help='MCTS simulations per distillation')
+    parser.add_argument('--subgraphs', type=int, default=1, help='subgraph ensemble size (>=1)')
     args = parser.parse_args()
 
     if args.device == 'xla':
@@ -43,6 +54,11 @@ def main():
 
     steps_per_epoch = train_data.n // args.batch_size
     total_steps = steps_per_epoch * args.epochs
+    if total_steps == 0:
+        raise SystemExit(
+            f'not enough data: {train_data.n:,} positions with --batch-size {args.batch_size} '
+            f'gives 0 training steps - use a smaller --batch-size or preprocess more games'
+        )
     scheduler = make_lr_schedule(optimizer, total_steps)
 
     step = 0
@@ -53,10 +69,23 @@ def main():
             if step >= total_steps:
                 break
             indices = shuffled[start:start + args.batch_size]
-            loss, losses = train_step(model, optimizer, scheduler, graph_builder, train_data, indices)
+            progress = step / max(1, total_steps)
+            loss, losses = train_step(model, optimizer, scheduler, graph_builder, train_data, indices,
+                                      progress=progress)
             step += 1
             if args.device == 'xla':
                 xm.mark_step()
+
+            if args.distill_mode != 'none' and step % args.distill_every == 0:
+                boards = batch_to_chess_boards(train_data.batch(indices[:args.distill_boards]),
+                                               max_boards=args.distill_boards)
+                if boards:
+                    d_loss = distill_search_step(model, optimizer, graph_builder, boards,
+                                                 mode=args.distill_mode,
+                                                 simulations=args.simulations,
+                                                 n_subgraphs=args.subgraphs)
+                    if step % LOG_EVERY == 0:
+                        print(f'  [distill:{args.distill_mode}] loss {d_loss:.4f}', flush=True)
 
             if step % LOG_EVERY == 0:
                 print(f'step {step}/{total_steps}  loss {loss.item():.4f}  '

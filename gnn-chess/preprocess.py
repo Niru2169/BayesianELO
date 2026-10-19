@@ -26,6 +26,7 @@ import chess.pgn
 import numpy as np
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ours_gpu_extras'))
+from chessutil import pos_key
 from labels import build_rows, record_game, rows_to_arrays
 
 RESULTS = {'1-0': 0, '1/2-1/2': 1, '0-1': 2}
@@ -43,7 +44,28 @@ def sample_plies(n_moves: int, sample_rate: float, rng) -> set:
     return {ply for ply in range(n_moves) if rng.random() < keep_prob(ply, sample_rate)}
 
 
-def process_game(game: chess.pgn.Game, sample_rate: float, rng, min_elo: int):
+def sample_plies_strict_dedup(board: chess.Board, moves: list, sample_rate: float,
+                              rng, seen_positions: set) -> set:
+    """Sample plies, strictly skipping any board state already in ``seen_positions``.
+
+    The key is the canonical position (piece placement, side to move, castling
+    rights, en-passant), so identical opening positions across games are only
+    sampled once.
+    """
+    sampled = set()
+    sim_board = board.copy()
+    for ply, move in enumerate(moves):
+        key = pos_key(sim_board)
+        if key not in seen_positions:
+            if rng.random() < keep_prob(ply, sample_rate):
+                sampled.add(ply)
+                seen_positions.add(key)
+        sim_board.push(move)
+    return sampled
+
+
+def process_game(game: chess.pgn.Game, sample_rate: float, rng, min_elo: int,
+                 seen_positions: set):
     result = RESULTS.get(game.headers.get('Result', ''))
     if result is None or game.headers.get('Variant', 'Standard') not in ('Standard', ''):
         return None
@@ -61,7 +83,9 @@ def process_game(game: chess.pgn.Game, sample_rate: float, rng, min_elo: int):
     board = game.board()
     if board.chess960:
         return None
-    sampled_plies = sample_plies(n_moves, sample_rate, rng)
+    sampled_plies = sample_plies_strict_dedup(board, moves, sample_rate, rng, seen_positions)
+    if not sampled_plies:
+        return None
     move_infos, states = record_game(board, moves, sampled_plies)
     return build_rows(move_infos, states, result)
 
@@ -71,11 +95,15 @@ def work(args):
     rng = np.random.default_rng(seed + chunk_id)
     stream = io.StringIO(text)
     rows, games = [], 0
+    # Per-chunk dedup: a process-pool worker cannot share a global set, so each
+    # chunk dedups against itself (which is where the opening redundancy lives).
+    # The exact global dedup happens on load via load_shards(strict_dedup=True).
+    seen_positions = set()
     while True:
         game = chess.pgn.read_game(stream)
         if game is None:
             break
-        r = process_game(game, rate, rng, min_elo)
+        r = process_game(game, rate, rng, min_elo, seen_positions)
         if r:
             rows.extend(r)
             games += 1
