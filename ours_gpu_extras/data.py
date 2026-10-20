@@ -10,6 +10,24 @@ SHARD_KEYS = ['board', 'ep', 'castle', 'turn', 'half', 'rep', 'next_from', 'next
               'moved', 'captured', 'chk', 'ptte', 'result', 'legal_len', 'legal_data']
 
 
+def _state_hashes(board, turn, castle, ep):
+    """Compact 64-bit hash of (board, turn, castle, ep) for memory-efficient dedup.
+
+    A structured ``np.unique(..., axis=0)`` over tens of millions of rows needs
+    several GB; hashing each row to 64 bits needs ~200 MB instead.
+    """
+    b = board.astype(np.uint64)
+    h = np.zeros(b.shape[0], dtype=np.uint64)
+    prime = np.uint64(0x100000001B3)  # FNV-1a 64-bit prime
+    for i in range(64):
+        h = h * prime
+        h ^= b[:, i]
+    h ^= turn.astype(np.uint64) * np.uint64(0x9E3779B97F4A7C15)
+    h ^= castle.astype(np.uint64) * np.uint64(0xC2B2AE3D27D4EB4F)
+    h ^= (ep.astype(np.uint64) + 1) * np.uint64(0x165667B19E3779F9)
+    return h
+
+
 def load_shards(files: list, strict_dedup: bool = True) -> dict:
     parts = {key: [] for key in SHARD_KEYS}
     for file in files:
@@ -23,13 +41,8 @@ def load_shards(files: list, strict_dedup: bool = True) -> dict:
 
     # Strict deduplication across the composite state signature
     # (board [64], turn [1], castle [1], ep [1]).
-    state_sig = np.concatenate([
-        raw['board'],
-        raw['turn'][:, None],
-        raw['castle'][:, None],
-        raw['ep'][:, None].view(np.uint8),
-    ], axis=1)
-    _, unique_indices = np.unique(state_sig, axis=0, return_index=True)
+    hashes = _state_hashes(raw['board'], raw['turn'], raw['castle'], raw['ep'])
+    _, unique_indices = np.unique(hashes, return_index=True)
     unique_indices = np.sort(unique_indices)
 
     # Rebuild the variable-length legal_data slices for the kept positions.
