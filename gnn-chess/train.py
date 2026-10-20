@@ -34,6 +34,8 @@ def main():
                         help='search algorithm used by the distillation targets')
     parser.add_argument('--simulations', type=int, default=64, help='MCTS simulations per distillation')
     parser.add_argument('--subgraphs', type=int, default=1, help='subgraph ensemble size (>=1)')
+    parser.add_argument('--ignore_duplicates', action='store_true',
+                        help='if set, duplicate board positions are dropped each epoch')
     args = parser.parse_args()
 
     if args.device == 'xla':
@@ -65,6 +67,9 @@ def main():
     model.train()
     while step < total_steps:
         shuffled = torch.randperm(train_data.n, device=device)
+        if args.ignore_duplicates:
+            # drop duplicate board positions; keep first occurrence per unique hash
+            shuffled = torch.unique(shuffled)
         for start in range(0, steps_per_epoch * args.batch_size, args.batch_size):
             if step >= total_steps:
                 break
