@@ -13,15 +13,17 @@ SHARD_KEYS = ['board', 'ep', 'castle', 'turn', 'half', 'rep', 'next_from', 'next
 def _state_hashes(board, turn, castle, ep):
     """Compact 64-bit hash of (board, turn, castle, ep) for memory-efficient dedup.
 
-    A structured ``np.unique(..., axis=0)`` over tens of millions of rows needs
-    several GB; hashing each row to 64 bits needs ~200 MB instead.
+    Hash column-by-column (each step is a transient 8-byte-per-row array) rather
+    than casting the whole (N, 64) board to uint64, which would need 8x the board
+    in RAM. A structured ``np.unique(..., axis=0)`` over tens of millions of rows
+    needs several GB; this needs ~200 MB.
     """
-    b = board.astype(np.uint64)
-    h = np.zeros(b.shape[0], dtype=np.uint64)
+    n = board.shape[0]
+    h = np.zeros(n, dtype=np.uint64)
     prime = np.uint64(0x100000001B3)  # FNV-1a 64-bit prime
     for i in range(64):
         h = h * prime
-        h ^= b[:, i]
+        h ^= board[:, i].astype(np.uint64)
     h ^= turn.astype(np.uint64) * np.uint64(0x9E3779B97F4A7C15)
     h ^= castle.astype(np.uint64) * np.uint64(0xC2B2AE3D27D4EB4F)
     h ^= (ep.astype(np.uint64) + 1) * np.uint64(0x165667B19E3779F9)
@@ -45,19 +47,26 @@ def load_shards(files: list, strict_dedup: bool = True) -> dict:
     _, unique_indices = np.unique(hashes, return_index=True)
     unique_indices = np.sort(unique_indices)
 
-    # Rebuild the variable-length legal_data slices for the kept positions.
-    lengths = raw['legal_len']
+    # Rebuild the variable-length legal_data slices for the kept positions,
+    # vectorised (a list of per-position slices would cost ~2.4 GB in list
+    # overhead for a large dataset).
+    lengths = raw['legal_len'].astype(np.int64)
     starts = np.cumsum(lengths) - lengths
-    kept_legal_slices = [
-        raw['legal_data'][starts[i]:starts[i] + lengths[i]] for i in unique_indices
-    ]
+    kept_starts = starts[unique_indices]
+    kept_lens = lengths[unique_indices]
+    total = int(kept_lens.sum())
+    if total:
+        group_starts = np.cumsum(kept_lens) - kept_lens
+        within = np.arange(total, dtype=np.int64) - np.repeat(group_starts, kept_lens)
+        flat_index = np.repeat(kept_starts, kept_lens) + within
+        legal_data = raw['legal_data'][flat_index]
+    else:
+        legal_data = np.empty(0, dtype=raw['legal_data'].dtype)
 
     deduped = {
         key: raw[key][unique_indices] for key in SHARD_KEYS if key != 'legal_data'
     }
-    deduped['legal_data'] = (
-        np.concatenate(kept_legal_slices) if kept_legal_slices else np.empty(0, dtype=np.uint16)
-    )
+    deduped['legal_data'] = legal_data
     return deduped
 
 
