@@ -48,24 +48,33 @@ def load_shards(files: list, strict_dedup: bool = True) -> dict:
     unique_indices = np.sort(unique_indices)
 
     # Rebuild the variable-length legal_data slices for the kept positions,
-    # vectorised (a list of per-position slices would cost ~2.4 GB in list
-    # overhead for a large dataset).
+    # chunked so the flat index arrays stay small (a single 633M-element int64
+    # index would need ~5 GB).
     lengths = raw['legal_len'].astype(np.int64)
     starts = np.cumsum(lengths) - lengths
     kept_starts = starts[unique_indices]
     kept_lens = lengths[unique_indices]
-    total = int(kept_lens.sum())
-    if total:
-        group_starts = np.cumsum(kept_lens) - kept_lens
-        within = np.arange(total, dtype=np.int64) - np.repeat(group_starts, kept_lens)
-        flat_index = np.repeat(kept_starts, kept_lens) + within
-        legal_data = raw['legal_data'][flat_index]
-    else:
-        legal_data = np.empty(0, dtype=raw['legal_data'].dtype)
+    parts = []
+    CHUNK = 500_000
+    for s in range(0, len(unique_indices), CHUNK):
+        ks = kept_starts[s:s + CHUNK]
+        kl = kept_lens[s:s + CHUNK]
+        tot = int(kl.sum())
+        if tot == 0:
+            continue
+        group_starts = np.cumsum(kl) - kl
+        within = np.arange(tot, dtype=np.int64) - np.repeat(group_starts, kl)
+        flat = np.repeat(ks, kl) + within
+        parts.append(raw['legal_data'][flat])
+    legal_data = np.concatenate(parts) if parts else np.empty(0, dtype=raw['legal_data'].dtype)
 
-    deduped = {
-        key: raw[key][unique_indices] for key in SHARD_KEYS if key != 'legal_data'
-    }
+    # Build the deduped dict while popping from `raw`, so the old arrays are
+    # freed as we go instead of both sets being resident at once.
+    deduped = {}
+    for key in SHARD_KEYS:
+        if key == 'legal_data':
+            continue
+        deduped[key] = raw.pop(key)[unique_indices]
     deduped['legal_data'] = legal_data
     return deduped
 
@@ -74,8 +83,11 @@ class GPUData:
     def __init__(self, arrays: dict, device):
         self.device = device
         self.n = len(arrays['board'])
-        arrays = dict(arrays, legal_data=arrays['legal_data'].astype(np.int32))
+        # keep legal_data as uint16 on the CPU; it is cast to int32 on the GPU
+        # (CUDA cannot index a UInt16 tensor, and casting on the CPU would double
+        # its size for no benefit).
         self.tensors = {key: torch.from_numpy(array).to(device) for key, array in arrays.items()}
+        self.tensors['legal_data'] = self.tensors['legal_data'].to(torch.int32)
 
         moves_per_position = self.tensors['legal_len'].long()
         self.first_move_of_position = torch.cumsum(moves_per_position, 0) - moves_per_position
